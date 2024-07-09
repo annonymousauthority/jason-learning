@@ -1,5 +1,7 @@
 # This file is on python modules
 from module import add
+from multiply import multiply_numbers
+from module import divide
 
 def calculator(operation, value1,  value2=None ):
     # Operation = Add, Subtract, Divide, Multiply
@@ -11,7 +13,11 @@ def calculator(operation, value1,  value2=None ):
     elif operation == "Divide":
        return value1/value2
     elif operation == "Multiply":
-        return value1 * value2
+        return multiply_numbers.multiply_number(value1, value2)
     else:
         return "Unknown Operation"
     
+
+
+def add(val1, val2):
+    return val1 + val2
